@@ -1,0 +1,51 @@
+ContosoMapControl As CanvasComponent:
+    Address: =""
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =500 
+    Key: ="Avq8HrAky5A1FuVOgUFv9AU6LjmgLDcxgDStcfu0wSfFsDYZbK6uTcRENSAAlk2F"
+    Latitude: =51.050572
+    Longitude: =-114.060923
+    OnReset: =
+    Pushpins: |-
+        =Table({Latitude:40.74836,Longitude:64.17246,PinStyle:4,Label:"P1"},{Latitude:40.74837,Longitude:65.17247,PinStyle:5,Label:"P2"})
+    ShowZoom: =true
+    Styles: |-
+        =Table({Key: "Imagery", Value:"Road"})
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =2
+    Zoom: =8
+
+    imgMap_1 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderColor: =imgMap_1.BorderColor
+        FocusedBorderThickness: =4
+        Height: =Parent.Height
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: |-
+            ="https://maps.googleapis.com/maps/api/staticmap?center=" & ContosoMapControl.Address & "&maptype=roadmap&markers=red:blue|label:C|" & ContosoMapControl.Address &  "&zoom=" & ContosoMapControl.Zoom & "&size=600x300&maptype=roadmap&key=" & ContosoMapControl.Key
+        ImagePosition: =ImagePosition.Fill
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =Parent.Width
+        ZIndex: =9
+
+    htmlReqMessage_1 As htmlViewer:
+        Color: =RGBA(116, 116, 116, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =If(IsBlank(ContosoMapControl.Key),0,ContosoMapControl.Height)
+        HoverBorderColor: =htmlReqMessage_1.BorderColor
+        HtmlText: |-
+            ="<div style='text-align:center;margin-top:30%'> An API Key is required <br/></div>"
+        PressedBorderColor: =htmlReqMessage_1.BorderColor
+        Size: =12
+        Visible: =IsBlank(ContosoMapControl.Key)
+        Width: =ContosoMapControl.Width
+        ZIndex: =14
+

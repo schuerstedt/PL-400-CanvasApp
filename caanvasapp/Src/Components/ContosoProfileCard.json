@@ -1,0 +1,55 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": false,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "ContosoProfileCard",
+    "TemplateGuid": "44c810cc4e634590813a9006bfa9bf83"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "Image",
+      "Hidden": false,
+      "Name": "Image",
+      "PropertyDataTypeKey": "Image",
+      "Tooltip": "Image",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Image\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Full Name",
+      "Hidden": false,
+      "Name": "FullName",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "FullName",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Title",
+      "Hidden": false,
+      "Name": "Title",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Title",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638333996504514858",
+  "Name": "44c810cc4e634590813a9006bfa9bf83",
+  "OverridableProperties": {},
+  "TemplateOriginalName": "6b14f7dc34e74cc7be05f6a981efe94d",
+  "Version": "636985361011142489"
+}

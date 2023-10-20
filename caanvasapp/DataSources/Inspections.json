@@ -1,0 +1,131 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "contoso_inspections",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "contoso_inspection",
+    "MaxGetRowsCount": 500,
+    "Name": "Inspections",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "bpf_contoso_inspection_contoso_newbuildsite": "New Build Site",
+      "contoso_comments": "Comments",
+      "contoso_inspection_AsyncOperations": "System Jobs",
+      "contoso_inspection_BulkDeleteFailures": "Bulk Delete Failures",
+      "contoso_inspection_DuplicateBaseRecord": "Duplicate Records (contoso_inspection_DuplicateBaseRecord)",
+      "contoso_inspection_DuplicateMatchingRecord": "Duplicate Records (contoso_inspection_DuplicateMatchingRecord)",
+      "contoso_inspection_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "contoso_inspection_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "contoso_inspection_ProcessSession": "Process Sessions",
+      "contoso_inspection_SyncErrors": "Sync Errors",
+      "contoso_inspectionid": "Inspection",
+      "contoso_inspectiontype": "Inspection Type",
+      "contoso_name": "Name",
+      "contoso_Permit": "Permit",
+      "contoso_scheduleddate": "Scheduled Date",
+      "contoso_sequence": "Sequence",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "processid": "Process Id",
+      "stageid": "(Deprecated) Stage Id",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "traversedpath": "(Deprecated) Traversed Path",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Inspections",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Inspections (Views)",
+    "Name": "_contoso_inspection_views",
+    "RelatedEntityName": "Inspections",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2067b790-3a22-49ed-8bf6-90c03738cd15": "Inspection Lookup View",
+      "24a3f9da-ae5c-4f80-93e0-eb23df7eb61c": "Inactive Inspections",
+      "5180e3f5-231f-ee11-9cbe-0022481c5f83": "Inspector View",
+      "aab5627d-4099-4bc4-a7e9-53090026587b": "Active Inspections",
+      "ce1d7deb-078c-4881-8b3a-d8455469fd54": "Inspection Associated View",
+      "dcc3bdaa-deed-41ee-a84f-9878938ae957": "Inspection Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Inspections)",
+    "Name": "contoso_inspection_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Inspections"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Inspections",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Inspections)",
+    "Name": "contoso_inspection_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "New Request",
+      "2": "Inactive",
+      "330650001": "Pending",
+      "330650002": "Passed",
+      "330650003": "Failed",
+      "330650004": "Canceled"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Inspections"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Inspections",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Inspection Type",
+    "Name": "contoso_inspectiontype",
+    "OptionSetInfoNameMapping": {
+      "330650000": "Initial Inspection",
+      "330650001": "Final Inspection"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "contoso_inspectiontype",
+        "OptionSetReferenceEntityName": "Inspections"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "contoso_inspectiontype",
+    "RelatedEntityName": "Inspections",
+    "Type": "OptionSetInfo"
+  }
+]

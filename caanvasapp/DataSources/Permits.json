@@ -1,0 +1,114 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "contoso_permits",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "contoso_permit",
+    "MaxGetRowsCount": 500,
+    "Name": "Permits",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "bpf_contoso_permit_contoso_newbuildsite": "New Build Site",
+      "contoso_BuildSite": "Build Site",
+      "contoso_Contact": "Contact",
+      "contoso_expirationdate": "Expiration Date",
+      "contoso_name": "Name",
+      "contoso_newsize": "New Size",
+      "contoso_permit_Annotations": "Notes",
+      "contoso_permit_AsyncOperations": "System Jobs",
+      "contoso_permit_BulkDeleteFailures": "Bulk Delete Failures",
+      "contoso_Permit_contoso_Permit_contoso_Ins": "Inspections",
+      "contoso_permit_DuplicateBaseRecord": "Duplicate Records (contoso_permit_DuplicateBaseRecord)",
+      "contoso_permit_DuplicateMatchingRecord": "Duplicate Records (contoso_permit_DuplicateMatchingRecord)",
+      "contoso_permit_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "contoso_permit_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "contoso_permit_ProcessSession": "Process Sessions",
+      "contoso_permit_SyncErrors": "Sync Errors",
+      "contoso_permitid": "Permit",
+      "contoso_PermitType": "Permit Type",
+      "contoso_startdate": "Start Date",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "processid": "Process Id",
+      "stageid": "(Deprecated) Stage Id",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "traversedpath": "(Deprecated) Traversed Path",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Permits",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Permits (Views)",
+    "Name": "_contoso_permit_views",
+    "RelatedEntityName": "Permits",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "03ac76d0-9a96-4cf0-b38d-f13ba2ef1fe4": "Active Permits",
+      "48482f15-b783-4827-baf9-5b701b7e62d8": "Permit Lookup View",
+      "508e8657-4eec-43c2-9fe4-e1c811df7960": "Inactive Permits",
+      "c6d23e1c-44b3-4221-9b24-1ebb98fc08bb": "Permit Associated View",
+      "f2991b16-0c4f-4f60-8bf5-eb21e2bc078d": "Permit Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Permits)",
+    "Name": "contoso_permit_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Permits"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Permits",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Permits)",
+    "Name": "contoso_permit_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive",
+      "330650001": "Locked",
+      "330650002": "Completed",
+      "330650003": "Canceled",
+      "330650004": "Expired"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Permits"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Permits",
+    "Type": "OptionSetInfo"
+  }
+]
