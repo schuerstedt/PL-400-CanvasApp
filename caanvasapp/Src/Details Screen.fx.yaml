@@ -238,7 +238,7 @@
 
     "'Failed Button' As button":
         OnSelect: |-
-            =Patch(Inspections, 'Inspection List'.Selected, {'Status Reason': 'Status Reason (Inspections)'.Failed });Refresh(Inspections);Back(ScreenTransition.UnCoverRight);
+            =Patch(Inspections,'Inspection List'.Selected,{'Status Reason':'Status Reason (Inspections)'.Failed});Refresh(Inspections);Back(ScreenTransition.UnCoverRight);
         Text: ="Failed"
         X: =862
         Y: =706
